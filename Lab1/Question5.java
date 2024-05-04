@@ -5,6 +5,7 @@ import java.util.Scanner;
 import java.util.HashSet;
 
 public class Question5 {
+    private ArrayList<Integer> numberList;
 
     // Constructor
     public Question5() {

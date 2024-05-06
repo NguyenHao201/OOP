@@ -73,14 +73,12 @@ public class Bank {
         }
 
     } ;
-    Comparator<BankAccount> comName = new Comparator<BankAccount> (){
-        @Override
-        public int compare (BankAccount o1, BankAccount o2) {
-            return o1.getmName().compareTo(o2.getmName ());
-
-        }
-
-    };
+//    Comparator<BankAccount> comName = new Comparator<BankAccount> (){
+//        @Override
+//        public int compare (BankAccount o1, BankAccount o2) {
+//            return o1.getmName().compareTo(o2.getmName ());
+//        }
+//    };
 
 
     public void SortAccNumber ()

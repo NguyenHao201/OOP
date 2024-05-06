@@ -13,13 +13,11 @@ import java.util.Scanner;
 public class DEFBank {
 
     public static void main(String[] args) {
-//        Bank bank = new Bank();
-//        bank.Input();
-//        bank.Print();
-//        bank.Deposit1Account();
-          Scanner obj = new Scanner(System.in);
-          BankAccount bankAcc = new BankAccount();
-          bankAcc.Input(obj);
+        Bank bank = new Bank();
+        bank.Input();
+        bank.Print();
+        bank.Deposit1Account();
+          
           
           
     }

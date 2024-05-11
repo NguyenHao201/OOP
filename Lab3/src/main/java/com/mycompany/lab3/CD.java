@@ -18,17 +18,50 @@ import java.util.Scanner;
 
    //class CD implements Comparable<CD> {
 public class CD{
+    private String ID;
+    private String collection;
+    private String type;
     private String title;
-    private String artist;
+    private int  year;
     private double price;
 
-    public CD(String title, String artist, double price) {
+    public CD() {
+    }
+
+    
+    
+    public CD(String ID, String collection, String type, String title, int dateTime, double price) {
+        this.ID = ID;
+        this.collection = collection;
+        this.type = type;
         this.title = title;
-        this.artist = artist;
+        this.year = dateTime;
         this.price = price;
     }
 
-    // Getters and setters
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public String getCollection() {
+        return collection;
+    }
+
+    public void setCollection(String collection) {
+        this.collection = collection;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     public String getTitle() {
         return title;
@@ -38,12 +71,12 @@ public class CD{
         this.title = title;
     }
 
-    public String getArtist() {
-        return artist;
+    public int getYear() {
+        return year;
     }
 
-    public void setArtist(String artist) {
-        this.artist = artist;
+    public void setYear(int year) {
+        this.year = year;
     }
 
     public double getPrice() {
@@ -53,6 +86,19 @@ public class CD{
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public static Comparator<CD> getCompareAboutTitle() {
+        return compareAboutTitle;
+    }
+
+    public static void setCompareAboutTitle(Comparator<CD> compareAboutTitle) {
+        CD.compareAboutTitle = compareAboutTitle;
+    }
+    
+    
+
+    
+    
 
 //    @Override
 //    public int compareTo(CD otherCD) {
@@ -64,7 +110,7 @@ public class CD{
     public String toString() {
         return "CD{" +
                 "title='" + title + '\'' +
-                ", artist='" + artist + '\'' +
+                ", year='" + year   + '\'' +
                 ", price=" + price +
                 '}';
     }

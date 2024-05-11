@@ -66,6 +66,21 @@ public class Lab3 {
 //               }
 //            }
 //        };
+
+        public void deleteCDById(ArrayList<CD> cds ) {
+            boolean deleted = false;
+            for (int i = 0; i < cds.size(); i++) {
+                if (cds.get(i).getArtist() == cds.toString()) {
+                    cds.remove(i);
+                    deleted = true;
+                    System.out.println("CD with ID " + cdId + " deleted successfully.");
+                    break;
+                }
+            }
+            if (!deleted) {
+                System.out.println("CD with ID " + cdId + " not found.");
+            }
+        }
     }
         
 

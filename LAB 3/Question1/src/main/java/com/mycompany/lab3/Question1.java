@@ -13,7 +13,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 //class CD implements Comparable<CD> {
-public class Lab3 {
+public class Question1 {
 
     public static void main(String[] args) {
         // Sample CDs

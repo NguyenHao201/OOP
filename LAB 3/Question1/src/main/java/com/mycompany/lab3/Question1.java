@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.lab3;
 
-/**
- *
- * @author tai.tran
- */
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -16,14 +9,14 @@ import java.util.Comparator;
 public class Question1 {
 
     public static void main(String[] args) {
-        // Sample CDs
+// Sample CDs
         ArrayList<CD> cds = new ArrayList<>();
 //add
         cds.add(new CD("123444", "game", "audio", "conan", 2003, 100));
         cds.add(new CD("123443", "game1", "audio1", "conan1", 2005, 1000));
         cds.add(new CD("123442", "game2", "audio1", "conan1", 2004, 10009));
         cds.add(new CD("123441", "game2", "audio1", "conan1", 2002, 10056));
-        
+
 //Search CD by CD title
         String checkTitle = SearchByTitle(cds, "conan");
         //System.out.println(check);
@@ -125,6 +118,5 @@ public class Question1 {
 //               }
 //            }
 //        };
-//
 
 

@@ -38,7 +38,9 @@ public class CD{
         this.year = dateTime;
         this.price = price;
     }
-
+    
+    
+    
     public String getID() {
         return ID;
     }
@@ -120,6 +122,18 @@ public class CD{
                 return o1.getTitle().compareTo(o2.getTitle());
             }
         };
+     
+     public void Input(){
+     Scanner obj = new Scanner(System.in);
+         System.out.println("Enter ID: " );
+         ID = obj.nextLine();
+         System.out.println("Enter collection: ");
+         collection = obj.nextLine();
+     }
+     
+     public void Output(){
+         System.out.println("ID: " + ID + "\nCollection: " + this.collection);
+     }
     
 }
 

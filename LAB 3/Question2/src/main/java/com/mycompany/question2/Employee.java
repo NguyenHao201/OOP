@@ -4,17 +4,19 @@
  */
 package com.mycompany.Question2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Computer
  */
-public class Employee {
+public abstract class Employee {
 
-    private String employeeID;
-    private String employeeName;
-    private int yearOfBirth;
-    private String address;
-    private String phone;
+    protected String employeeID;
+    protected String employeeName;
+    protected int yearOfBirth;
+    protected String address;
+    protected String phone;
 
     public Employee() {
     }
@@ -67,7 +69,26 @@ public class Employee {
         this.phone = phone;
     }
     
+    public void Input(){
+    Scanner obj = new Scanner(System.in);
+        System.out.println("Enter Employee ID: ");
+        employeeID = obj.nextLine();
+        System.out.println("Enter Employee Name: ");
+        employeeName = obj.nextLine();
+        System.out.println("Enter Year of Birth: ");
+        yearOfBirth = obj.nextInt();
+        obj.nextLine();
+        System.out.println("Enter address: ");
+        address = obj.nextLine();
+        System.out.println("Enter phone");
+        phone = obj.nextLine();
+    }
     
+        
+    
+    public abstract String getInfo();
+    
+    public abstract float getPayment();
     
 }
 

@@ -5,7 +5,7 @@
 package Question2;
 enum BankType{
 VietcomBank,
-TPBank;}
+TPBank}
 /**
  *
  * @author Student

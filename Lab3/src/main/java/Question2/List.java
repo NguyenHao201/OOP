@@ -161,7 +161,7 @@ public class List {
 
     }
 
-    public void sort() { // vt soer ra 2 class con la fulltime va parttime
+    public void sort() { 
 
         Comparator<Employee> com = new Comparator<Employee>() {
             public int compare(Employee e1, Employee e2) {
